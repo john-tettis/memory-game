@@ -1,0 +1,103 @@
+body{
+  background-color: #2f3444 ;
+  display:flex;
+align-items: center;
+justify-content: center;
+font-family: 'Oswald', sans-serif;
+}
+h1{
+  font-size: 3em;
+  color:#4b6c57;
+}
+#game div {
+
+  border-radius: 3px;
+  width: 16%;
+  height: 200px;
+  margin: 13px;
+  display: inline-block;
+  background-color:#f9de90;
+  border: 2px solid #2f3444;
+  border-radius:3px;
+  
+  
+}
+#game-container{
+background-color:#e7923d;
+border-radius: 3px;
+width:50rem;
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+display: table;
+}
+.rotate{
+  transform: rotateY(180deg);
+  
+}
+div.card{
+  
+  transition: transform 2s;
+  
+  
+}
+
+.container{
+  width: 100%;;
+  height: 10rem;
+  background-color:#bd6724;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#start-button{
+  width: 5rem;
+  height: 80%;
+  background-color:#F6F740;
+  margin-left:30px;
+  border: 3px solid #2f3444;
+  border-radius:4px;
+  font-weight: bold;
+}
+.scoretime{
+  width:100%;
+  height:50px;
+  background-color:#f9de90;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.win{
+  transform: translate(-50%,-50%);
+  background-color:#F6F740;
+  border: 3px solid #2f3444;
+  border-radius: 3px;
+  width:40rem;
+  text-align: center;
+  justify-content: center;
+  color:#bd6724;
+  transition: size 2s;
+  font-size: 5rem;
+  padding:20px;
+  position: absolute;
+  top:50%;
+  left:50%;
+}
+.button{
+  height:3rem;
+  width:8rem;
+  border: 3px solid #2f3444;
+  border-radius:4px;
+}
+.time{
+  margin-right:30px;
+  padding: .55rem;
+  text-align: center;
+  justify-content: center;
+  width:4em;
+  font-weight: bold;
+  background-color:#d6bf79be;
+  border-radius:4px;
+}
