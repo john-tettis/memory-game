@@ -21,18 +21,21 @@ var matched = false;
   "purple2"
 ];
 */
-var shuffledColors=[];
+
 function randomColors(cardAmount){
+  var colors=[];
   let increment=cardAmount/2;
   for(let i=0; i<increment; i++){
     let r= Math.floor(Math.random()*226);
     let g= Math.floor(Math.random()*226);
     let b= Math.floor(Math.random()*226);
-    shuffledColors.push(`rgb(${r},${g},${b})1`);
-    shuffledColors.push(`rgb(${r},${g},${b})2`);
+    colors.push(`rgb(${r},${g},${b})1`);
+    colors.push(`rgb(${r},${g},${b})2`);
 }
-}
-randomColors(10);
+return colors;
+} 
+let colors = randomColors(10);
+let shuffledColors = shuffle(colors);
 // here is a helper function to shuffle an array
 // it returns the same array with values shuffled
 // it is based on an algorithm called Fisher Yates if you want ot research more
